@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="20dp">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
         android:id="@+id/textViewTitle"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#3b5998"
+        android:textColor="@drawable/list_item_text_selector"
         />
+
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
         android:textSize="20sp"
         android:id="@+id/textViewBody"
-        android:textColor="#8b9dc3"/>
+        android:textColor="@drawable/list_item_text_selector"/>
 
     <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/listViewComments"></ListView>
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewComments"
+        />
 
 
 

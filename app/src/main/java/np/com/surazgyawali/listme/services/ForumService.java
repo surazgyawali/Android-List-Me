@@ -1,9 +1,10 @@
 package np.com.surazgyawali.listme.services;
 
-import org.w3c.dom.Comment;
+
 
 import java.util.List;
 
+import np.com.surazgyawali.listme.models.Comment;
 import np.com.surazgyawali.listme.models.Post;
 import retrofit.RequestInterceptor;
 import retrofit.RestAdapter;
@@ -17,7 +18,6 @@ import rx.Observable;
  * Created by root on 8/28/16.
  */
 public class ForumService {
-
 
     private static final String FORUM_SERVER_URL = "http://jsonplaceholder.typicode.com";
     private ForumApi mForumApi;
@@ -50,18 +50,18 @@ public class ForumService {
 
         @GET("/posts")
         public Observable<List<Post>>
-        getPosts();
+            getPosts();
 
         @GET("/posts/{id}")
         public Observable<Post>
-        getPost(@Path("id") int postId);
+            getPost(@Path("id") int postId);
 
         @GET("/comments")
         public Observable<List<Comment>>
-        getComments(@Query("postId") int postId);
+            getComments(@Query("postId") int postId);
 
         @POST("/posts")
         public Observable<Post>
-        postPost(Post post);
+            postPost(Post post);
     }
 }

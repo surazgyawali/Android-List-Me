@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import np.com.surazgyawali.listme.R;
 import np.com.surazgyawali.listme.models.Post;
 
 /**
