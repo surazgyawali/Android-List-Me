@@ -15,3 +15,5 @@ List View:
 Details View:
 
 ![Details View](https://bitbucket.org/repo/zL8kar/images/3175808755-DetailsView.png)
+
+[Suraj Gyawali](https://surazgyawali.github.io/)
